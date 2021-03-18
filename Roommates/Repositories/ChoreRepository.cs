@@ -10,7 +10,7 @@ namespace Roommates.Repositories
 
         public List<Chore> GetAll()
         {
-     
+
             using (SqlConnection conn = Connection)
             {
                 // Note, we must Open() the connection, the "using" block doesn't do that for us.
@@ -118,6 +118,7 @@ namespace Roommates.Repositories
 
             // when this method is finished we can look in the database and see the new chore.
         }
+
     }
 }
 
